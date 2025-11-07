@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X, Phone, Mail, MapPin, Facebook, Instagram, Globe } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
@@ -29,36 +29,6 @@ const Navbar = () => {
     { name: 'Contact Us', href: '/contact' },
   ];
 
-  // robust scroll helper that accounts for header height
-  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {
-    // keep native behavior for modifier keys / new tab
-    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
-
-    e.preventDefault();
-    const id = href.replace(/^#/, '');
-    const target = document.getElementById(id);
-    if (!target) {
-      // fallback: go to the href (keeps baseline behavior if id missing)
-      window.location.hash = href;
-      return;
-    }
-
-    // compute header height dynamically (works even if header height changes)
-    const headerEl = document.querySelector('header');
-    const headerHeight = headerEl ? headerEl.getBoundingClientRect().height : 0;
-
-    // top of target relative to document
-    const targetTop = target.getBoundingClientRect().top + window.pageYOffset;
-    const scrollTo = Math.max(0, Math.floor(targetTop - headerHeight - 8)); // -8 for a little breathing room
-
-    window.scrollTo({
-      top: scrollTo,
-      behavior: 'smooth',
-    });
-
-    // close mobile menu if open
-    if (isMobileMenuOpen) setIsMobileMenuOpen(false);
-  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
