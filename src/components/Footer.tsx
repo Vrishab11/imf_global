@@ -32,9 +32,9 @@ const Footer = () => {
             <p className="text-gray-600 text-sm leading-relaxed">
               Your journey to success begins with the right guidance. Dream big, explore beyond, and achieve more
             </p>
-            <div className="flex gap-3">
+            {/* <div className="flex gap-3">
               <a
-                href="https://www.facebook.com"
+                href="https://www.instagram.com/imfglobalhorizons"
                 className="w-10 h-10 rounded-full bg-white hover:bg-yellow-600 flex items-center justify-center transition-all duration-300 group shadow-sm"
               >
                 <Facebook className="w-4 h-4 text-gray-600 group-hover:text-white transition-colors" />
@@ -51,7 +51,7 @@ const Footer = () => {
               >
                 <Globe className="w-4 h-4 text-gray-600 group-hover:text-white transition-colors" />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Services */}

@@ -13,7 +13,7 @@ const Services = () => {
         </h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-1 gap-1 md:pl-20 pr-20 pb-10 pt-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 pl-25 md:pl-10 pb-10">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-3 pl-25 md:pl-10 pb-5">
           <div className="w-96 rounded-2xl flex flex-col items-center justify-center shadow-2xl">
             <img src="/images/1.jpg" alt="" className="w-full h-72 object-cover rounded-t-2xl" />
             <div className="w-full text-center mt-2 pb-5">
@@ -36,7 +36,7 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 pl-25 md:pl-10">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-3 pl-25 md:pl-10">
           <div className="w-96 rounded-2xl flex flex-col items-center justify-center shadow-2xl">
             <img src="/images/4.jpg" alt="" className="w-full h-72 object-cover rounded-t-2xl" />
             <div className="w-full text-center mt-2 pb-5">
