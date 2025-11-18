@@ -5,12 +5,10 @@ const Home = () => {
     <div id='top' className="overflow-x-hidden">
       <HeroSection />
 
-      {/* About Section */}
       <section
         id="about"
-        className="flex flex-col lg:flex-row items-center justify-center align-middle gap-12 scroll-mt-24 py-25 bg-white"
+        className="flex flex-col lg:flex-row items-center justify-center align-middle gap-12 scroll-mt-24 py-10 bg-white"
       >
-        {/* Left: Image */}
         <div className="justify-center hidden lg:flex mr-40 mt-16 ml-40">
           <img
             src="/images/graduation.jpg"
@@ -19,14 +17,15 @@ const Home = () => {
           />
         </div>
 
-        {/* Right: Text Box */}
-        <div className="flex flex-col mt-16 pr-40">
-          <h2 className="text-yellow-600 text-left tracking-wide text-2xl font-semibold mb-6 uppercase">About Company</h2>
-          <div className="max-w-xl mx-auto text-justify">
-            <p className='mb-5 mt-2 text-black text-3xl font-bold'>
+        <div className="flex flex-col md:mt-16 px-5 md:pl-10 lg:pr-40">
+          <h2 className="text-yellow-600 text-left tracking-wide text-2xl font-semibold mb-6 uppercase">
+            About Company
+          </h2>
+          <div className="max-w-xl mx-auto md:text-justify">
+            <p className='mb-5 mt-2 text-black text-xl md:text-3xl font-bold'>
               Achieve Your Dream Of Studying Abroad With Expert Guidance
             </p>
-            <p className="mb-8 text-gray-800 leading-relaxed text-2xl">
+            <p className="text-gray-800 leading-relaxed text-base md:text-2xl md:mb-8">
               Welcome to IMF Global Horizons, your trusted partner in international education and migration services...
               With a team of experienced counselors and a proven track record of successful student placements,
               we ensure a <span className="font-bold text-black">hassle-free and transparent</span> process.

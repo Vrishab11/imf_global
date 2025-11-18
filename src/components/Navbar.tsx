@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
       {/* Top Header Bar */}
-      <div className="bg-gray-900 text-white py-2">
+      {/* <div className="bg-gray-900 text-white py-2">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-between items-center text-sm">
             <ul className="flex flex-wrap items-center gap-4">
@@ -61,16 +61,16 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Main Navigation */}
       <div className={`transition-all duration-300 ${isSticky ? 'bg-white shadow-lg' : isScrolled ? 'bg-white shadow-md' : 'bg-white/95 backdrop-blur-sm'}`}>
         <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center py-4">
+          <div className="flex justify-between items-center py-2">
             {/* Logo */}
             <div className="flex items-center">
               <a href="/" onClick={() => navigate('/')} className="text-2xl font-bold text-gray-900">
-                <img src="/logo/IMF-logo.png" alt="" width={130}/>
+                <img src="/logo/IMF_logo_main.png" alt="" width={130}/>
               </a>
             </div>
 

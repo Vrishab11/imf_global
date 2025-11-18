@@ -14,7 +14,7 @@ function App() {
     <>
     <div className="relative h-screen w-screen overflow-x-hidden">
       <Navbar/>
-      <div className="pt-35">
+      <div className="pt-14 md:pt-20">
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<AboutUs/>} />

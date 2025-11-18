@@ -4,9 +4,9 @@ const ContactUs = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero section */}
-      <div className="relative bg-[url('/images/contact.jpg')] bg-center bg-cover flex items-center justify-center h-[300px]">
-        <div className="absolute inset-0 bg-black/60"></div>
-        <h1 className="text-7xl font-bold text-white px-12 py-4 z-10 rounded">Contact Us</h1>
+      <div className="relative bg-[url('/images/contact_us.jpg')] bg-center bg-cover flex items-center justify-center h-[350px]">
+        {/* <div className="absolute inset-0 bg-black/60"></div>
+        <h1 className="text-7xl font-bold text-white px-12 py-4 z-10 rounded">Contact Us</h1> */}
       </div>
       
       <div className="max-w-6xl mx-auto py-12 px-4 grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -18,10 +18,10 @@ const ContactUs = () => {
           </p>
 
           <div className="mb-6 flex items-start gap-3">
-            <AiOutlinePhone className="text-yellow-600 text-2xl mt-[2px]" />
+            <AiOutlinePhone className="text-yellow-600 text-2xl mt-0.5" />
             <div>
               <span className="text-yellow-600 font-semibold block">Call For Inquiry</span>
-              <div className="font-bold text-xl text-gray-900 mt-1">
+              <div className="font-light text-xl text-gray-900 mt-1">
                 +91-7034111687<br />
                 +91-7034111688
               </div>
@@ -29,10 +29,10 @@ const ContactUs = () => {
           </div>
 
           <div className="mb-6 flex items-start gap-3">
-            <AiOutlineMail className="text-yellow-600 text-2xl mt-[2px]" />
+            <AiOutlineMail className="text-yellow-600 text-2xl mt-0.5" />
             <div>
               <span className="text-yellow-600 font-semibold block">Send Us Email</span>
-              <div className="font-bold text-xl text-gray-900 mt-1">
+              <div className="font-light text-xl text-gray-900 mt-1">
                 <a href="mailto:info@imfglobalhorizons.com" className="hover:underline">
                   info@imfglobalhorizons.com
                 </a>
@@ -41,10 +41,10 @@ const ContactUs = () => {
           </div>
 
           <div className="mb-6 flex items-start gap-3">
-            <AiOutlineEnvironment className="text-yellow-600 text-2xl mt-[2px]" />
+            <AiOutlineEnvironment className="text-yellow-600 text-2xl mt-0.5" />
             <div>
               <span className="text-yellow-600 font-semibold block">Location</span>
-              <div className="font-bold text-xl text-gray-900 mt-1 leading-tight">
+              <div className="font-light text-xl text-gray-900 mt-1 leading-tight">
                 IMF GLOBAL HORIZONS, Building No. 5/257A8,<br />
                 Basement Floor, Pallath Square, FACT Kalamassery Rd,<br />
                 Kalamassery P.O, Ernakulam - 683104

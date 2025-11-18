@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  /* Fonts */
+  --font-family-sans: 'Roboto Serif', serif;
+  --font-family-serif: 'Roboto Serif', serif;
+  
+  /* Colors */
+  --color-primary: #d97706;
+  --color-secondary: #b45309;
+  
+  /* Spacing (if needed) */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+}

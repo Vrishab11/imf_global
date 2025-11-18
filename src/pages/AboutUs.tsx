@@ -3,7 +3,7 @@
 const AboutUs = () => {
   return (
     <div>
-      <img src="/images/contact.jpg" alt="" />
+      <img src="/images/about_us.jpg" alt="" />
     </div>
   )
 }
