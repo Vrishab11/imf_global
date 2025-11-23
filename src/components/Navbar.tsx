@@ -154,13 +154,13 @@ const Navbar = () => {
                 </a>
               </div>
               
-              <a
+              {/* <a
                 href="/contact"
                 onClick={() => navigate('/contact')}
                 className="block text-center bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-3 rounded-full font-medium transition"
               >
                 Get Started
-              </a>
+              </a> */}
             </div>
           </nav>
         </div>
