@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Phone, Mail, MapPin, Facebook, Instagram, Globe } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {

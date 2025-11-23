@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Globe, MapPin } from 'lucide-react';
+import {  MapPin } from 'lucide-react';
 
 const Footer = () => {
   const services = [
@@ -121,7 +121,7 @@ const Footer = () => {
         <a href="https://www.instagram.com/imfglobalhorizons"
           target="_blank"
           rel="noopener noreferrer"
-          className="w-14 h-14 bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 hover:from-purple-700 hover:via-pink-600 hover:to-orange-500 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 group hover:scale-110"
+          className="w-14 h-14 bg-linear-to-br from-purple-600 via-pink-500 to-orange-400 hover:from-purple-700 hover:via-pink-600 hover:to-orange-500 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 group hover:scale-110"
           aria-label="Instagram"
         >
           <svg
