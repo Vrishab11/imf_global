@@ -41,9 +41,9 @@ const AboutUs = () => {
       </section>
       <section
         id="why-choose-us"
-        className="flex flex-col lg:flex-row items-center justify-center gap-12 scroll-mt-24 pr-30 bg-white"
+        className="flex flex-col lg:flex-row items-center justify-center gap-12 scroll-mt-24 md:pr-30 bg-white"
       >
-        <div className="flex-1 flex flex-col px-6 lg:pl-20">
+        <div className="flex flex-col px-5 md:px-10 lg:pl-20">
           <h2 className="text-yellow-600 text-left tracking-wide text-2xl font-semibold mb-4 uppercase">
             Why Choose Us
           </h2>
@@ -259,7 +259,7 @@ const AboutUs = () => {
           </p>
         </div>
 
-        <div className="justify-center flex mr-40 mt-1 ml-40">
+        <div className="justify-center flex md:mr-40 mt-1 md:ml-40">
           <img
             src="/faces/Group6.jpg"
             alt="MIF"
