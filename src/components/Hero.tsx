@@ -21,14 +21,14 @@ const HeroSection = () => {
     <section
       id="home"
       ref={heroRef}
-      className="bg-[url('/images/mobile_hero.jpg')] md:bg-[url('/images/night.jpg')] bg-cover bg-center relative min-h-[85vh] md:min-h-screen flex items-center justify-start md:justify-center overflow-hidden lg:pl-14"
+      className="bg-[url('/images/mobile_hero.jpg')] md:bg-[url('https://res.cloudinary.com/dq52smwbk/image/upload/v1764306950/night_v7rzn6.jpg')] bg-cover bg-center relative min-h-[85vh] md:min-h-screen flex items-center justify-start md:justify-center overflow-hidden lg:pl-14"
       style={{
         backgroundBlendMode: 'darken',
         backgroundColor: 'rgba(0, 0, 0, 0.4)'
       }}
     >
       {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-gray-900/50 to-transparent"></div>
+      <div className="absolute inset-0 bg-linear-to-r from-black/70 via-gray-900/50 to-transparent"></div>
 
       {/* Main Content */}
       <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-4 relative z-10 w-full">

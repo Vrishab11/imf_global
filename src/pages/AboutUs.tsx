@@ -8,7 +8,7 @@ import { MdSentimentVerySatisfied } from "react-icons/md";
 const AboutUs = () => {
   return (
     <div className="min-h-screen">
-      <div className="relative bg-[url('/images/about_us.jpg')] bg-center bg-cover flex items-center justify-center h-[350px]">
+      <div className="relative bg-[url('https://res.cloudinary.com/dq52smwbk/image/upload/v1764307634/about_us_gbrkyv.jpg')] bg-center bg-cover flex items-center justify-center h-[350px]">
         <div className="absolute inset-0"></div>
       </div>
       <section

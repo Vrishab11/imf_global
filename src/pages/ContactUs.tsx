@@ -36,7 +36,7 @@ const ContactUs: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero section */}
-      <div className="relative bg-[url('/images/contact_us.jpg')] bg-center bg-cover flex items-center justify-center h-[350px]"></div>
+      <div className="relative bg-[url('https://res.cloudinary.com/dq52smwbk/image/upload/v1764306951/contact_us_hdegt2.jpg')] bg-center bg-cover flex items-center justify-center h-[350px]"></div>
 
       <div className="max-w-6xl mx-auto py-12 px-4 grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Contact Info */}
