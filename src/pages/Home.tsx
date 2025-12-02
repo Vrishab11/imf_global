@@ -11,7 +11,7 @@ const Home = () => {
       >
         <div className="justify-center hidden lg:flex mr-40 mt-16 ml-40">
           <img
-            src="/images/graduation.jpg"
+            src="/images/graduation.webp"
             alt="Graduation"
             className="rounded-xl shadow-lg w-[90%] max-w-[300px] object-cover"
           />

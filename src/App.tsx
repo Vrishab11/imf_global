@@ -2,6 +2,7 @@
 import { Routes, Route } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import Navbar from './components/Navbar'; // Your navbar with useNavigate
+import Footer from './components/Footer';
 
 // Lazy load pages
 const Home = lazy(() => import('./pages/Home'));
@@ -15,7 +16,7 @@ function App() {
   return (
     <>
       <Navbar />  {/* Now has Router context */}
-      <Suspense fallback={<LoadingScreen />}>
+      <Suspense fallback={<LoadingScreen progress={100} />}>
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<AboutUs/>} />
@@ -24,6 +25,7 @@ function App() {
           <Route path="/contact" element={<ContactUs/>} />
         </Routes>
       </Suspense>
+      <Footer />
     </>
   );
 }

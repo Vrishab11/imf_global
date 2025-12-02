@@ -1,8 +1,14 @@
-// src/components/LoadingScreen.tsx
+// LoadingScreen.tsx
 import React from 'react';
 import IMFLogo from '/logo/IMF_logo_tab.png';
 
-const LoadingScreen: React.FC = () => {
+type Props = {
+  progress: number;
+};
+
+const LoadingScreen: React.FC<Props> = ({ progress }) => {
+  const clamped = Math.min(100, Math.max(0, progress));
+
   return (
     <div
       style={{
@@ -14,32 +20,32 @@ const LoadingScreen: React.FC = () => {
         justifyContent: 'center',
         zIndex: 9999,
         overflow: 'hidden',
+        flexDirection: 'column',
+        gap: '32px',
       }}
     >
-      {/* Gold spinning ring */}
-      <div
-        style={{
-          position: 'absolute',
-          width: '200px',
-          height: '200px',
-          borderRadius: '50%',
-          border: '4px solid rgba(212, 175, 55, 0.25)',
-          borderTopColor: '#D4AF37',
-          animation: 'imf-spin 1.2s linear infinite',
-        }}
-      />
-
-      {/* Logo + text */}
+      {/* existing gold ring + logo */}
       <div
         style={{
           position: 'relative',
-          zIndex: 1,
+          width: '200px',
+          height: '200px',
           display: 'flex',
-          flexDirection: 'column',
           alignItems: 'center',
-          gap: '24px',
+          justifyContent: 'center',
         }}
       >
+        <div
+          style={{
+            position: 'absolute',
+            width: '200px',
+            height: '200px',
+            borderRadius: '50%',
+            border: '4px solid rgba(212, 175, 55, 0.25)',
+            borderTopColor: '#D4AF37',
+            animation: 'imf-spin 1.2s linear infinite',
+          }}
+        />
         <img
           src={IMFLogo}
           alt="IMF Logo"
@@ -51,21 +57,42 @@ const LoadingScreen: React.FC = () => {
             filter: 'drop-shadow(0 0 20px rgba(212, 175, 55, 0.5))',
           }}
         />
-        {/* <span
-          style={{
-            color: '#FFFFFF',
-            fontSize: '22px',
-            fontWeight: 700,
-            letterSpacing: '0.12em',
-            textTransform: 'uppercase',
-            animation: 'imf-pulse 2s ease-in-out infinite',
-          }}
-        >
-          Loading...
-        </span> */}
       </div>
 
-      {/* Keyframes */}
+      {/* progress text */}
+      <span
+        style={{
+          color: '#FFFFFF',
+          fontSize: '20px',
+          fontWeight: 700,
+          letterSpacing: '0.12em',
+        }}
+      >
+        Loading {clamped}%
+      </span>
+
+      {/* progress bar */}
+      <div
+        style={{
+          width: '260px',
+          height: '10px',
+          borderRadius: '999px',
+          backgroundColor: '#222',
+          overflow: 'hidden',
+          boxShadow: '0 0 15px rgba(212, 175, 55, 0.4)',
+        }}
+      >
+        <div
+          style={{
+            width: `${clamped}%`,
+            height: '100%',
+            background:
+              'linear-gradient(90deg, #8a6b1f, #D4AF37, #f1e3a0)',
+            transition: 'width 80ms linear',
+          }}
+        />
+      </div>
+
       <style>
         {`
           @keyframes imf-spin {
