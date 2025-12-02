@@ -10,8 +10,8 @@ const Root: React.FC = () => {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    const totalDuration = 3000;
-    const intervalMs = 50;
+    const totalDuration = 1700;
+    const intervalMs = 30;
 
     const steps = totalDuration / intervalMs;
     const increment = 100 / steps;

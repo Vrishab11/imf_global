@@ -43,7 +43,7 @@ const LoadingScreen: React.FC<Props> = ({ progress }) => {
             borderRadius: '50%',
             border: '4px solid rgba(212, 175, 55, 0.25)',
             borderTopColor: '#D4AF37',
-            animation: 'imf-spin 1.2s linear infinite',
+            animation: 'imf-spin 1s linear infinite',
           }}
         />
         <img
@@ -88,7 +88,7 @@ const LoadingScreen: React.FC<Props> = ({ progress }) => {
             height: '100%',
             background:
               'linear-gradient(90deg, #8a6b1f, #D4AF37, #f1e3a0)',
-            transition: 'width 80ms linear',
+            transition: 'width 10ms linear',
           }}
         />
       </div>
