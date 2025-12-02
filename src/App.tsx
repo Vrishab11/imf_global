@@ -1,20 +1,21 @@
-import { Route, Routes } from "react-router-dom"
-import Home from "./pages/Home"
-import AboutUs from "./pages/AboutUs"
-import Services from "./pages/Services"
-import Gallery from "./pages/Gallery"
-import ContactUs from "./pages/ContactUs"
-import Navbar from "./components/Navbar"
-import Footer from "./components/Footer"
+// App.tsx
+import { Routes, Route } from 'react-router-dom';
+import { lazy, Suspense } from 'react';
+import Navbar from './components/Navbar'; // Your navbar with useNavigate
 
+// Lazy load pages
+const Home = lazy(() => import('./pages/Home'));
+const AboutUs = lazy(() => import('./pages/AboutUs'));
+const Services = lazy(() => import('./pages/Services'));
+const Gallery = lazy(() => import('./pages/Gallery'));
+const ContactUs = lazy(() => import('./pages/ContactUs'));
+const LoadingScreen = lazy(() => import('./components/LoadingScreen'));
 
 function App() {
-
   return (
     <>
-    <div className="relative h-screen w-screen overflow-x-hidden">
-      <Navbar/>
-      <div className="pt-14 md:pt-20">
+      <Navbar />  {/* Now has Router context */}
+      <Suspense fallback={<LoadingScreen />}>
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<AboutUs/>} />
@@ -22,11 +23,9 @@ function App() {
           <Route path="/gallery" element={<Gallery/>} />
           <Route path="/contact" element={<ContactUs/>} />
         </Routes>
-      </div>
-      <Footer />
-    </div>
+      </Suspense>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

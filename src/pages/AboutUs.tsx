@@ -17,7 +17,7 @@ const AboutUs = () => {
       >
         <div className="justify-center hidden lg:flex mr-40 mt-16 ml-40">
           <img
-            src="/images/graduation.jpg"
+            src="/images/graduation.webp"
             alt="Graduation"
             className="rounded-xl shadow-lg w-[90%] max-w-[350px] h-[500px] object-cover"
           />
@@ -79,13 +79,13 @@ const AboutUs = () => {
 
         <div className="hidden flex-1 md:flex flex-col lg:flex-row items-center justify-center gap-6 lg:pr-20">
           <div className="w-[340px] h-[410px] mb-6 lg:mb-0 relative">
-            <img src="/images/graduation.jpg" alt="Graduation" className="w-full h-full rounded-xl object-cover shadow-lg" />
+            <img src="/images/graduation.webp" alt="Graduation" className="w-full h-full rounded-xl object-cover shadow-lg" />
             <div className="absolute w-[340px] bottom-0 bg-yellow-600 bg-opacity-90 text-white font-bold text-xl align-middle justify-center px-6 py-4 rounded-b-xl">
               5000+ Trusted Customers
             </div>
           </div>
           <div className="w-[220px] h-[260px] hidden lg:block">
-            <img src="/images/services.jpg" alt="Campus Walk" className="w-full h-full rounded-xl object-cover shadow" />
+            <img src="/images/services.webp" alt="Campus Walk" className="w-full h-full rounded-xl object-cover shadow" />
           </div>
         </div>
       </section>
@@ -95,7 +95,7 @@ const AboutUs = () => {
       >
         <div className="justify-center hidden lg:flex mr-40 mt-16 ml-40">
           <img
-            src="/faces/MIF3.jpg"
+            src="https://res.cloudinary.com/dq52smwbk/image/upload/v1764306983/MIF3_yvf2tm.jpg"
             alt="MIF"
             className="rounded-xl shadow-lg w-[90%] max-w-[650px] h-[400px] object-cover"
           />
@@ -148,7 +148,7 @@ const AboutUs = () => {
       >
         <div className="justify-center hidden lg:flex mr-40 mt-16 ml-40">
           <img
-            src="/faces/Imthi2.jpg"
+            src="https://res.cloudinary.com/dq52smwbk/image/upload/v1764306984/Imthi2_bsmbaq.jpg"
             alt="MIF"
             className="rounded-xl shadow-lg w-[90%] max-w-[650px] h-[400px] object-cover"
           />
@@ -188,7 +188,7 @@ const AboutUs = () => {
 
         <div className="justify-center hidden lg:flex mr-40 mt-16 ml-40">
           <img
-            src="/faces/Neethu5.jpg"
+            src="https://res.cloudinary.com/dq52smwbk/image/upload/v1764306985/Neethu5_mfcfo8.jpg"
             alt="MIF"
             className="rounded-xl shadow-lg w-[90%] max-w-[650px] h-[400px] object-cover"
           />
@@ -200,7 +200,7 @@ const AboutUs = () => {
       >
         <div className="justify-center hidden lg:flex mr-30 mt-16 ml-20">
           <img
-            src="/faces/Francis3.jpg"
+            src="https://res.cloudinary.com/dq52smwbk/image/upload/v1764306983/Francis3_n3rddr.jpg"
             alt="MIF"
             className="rounded-xl shadow-lg w-[90%] max-w-[650px] h-[400px] object-cover"
           />
@@ -240,7 +240,7 @@ const AboutUs = () => {
 
         <div className="justify-center hidden lg:flex mr-40 mt-16 ml-40">
           <img
-            src="/faces/Mohit1.jpg"
+            src="https://res.cloudinary.com/dq52smwbk/image/upload/v1764306983/Mohit1_hvyhs3.jpg"
             alt="MIF"
             className="rounded-xl shadow-lg w-[90%] max-w-[650px] h-[400px] object-cover"
           />
@@ -261,7 +261,7 @@ const AboutUs = () => {
 
         <div className="justify-center flex md:mr-40 mt-1 md:ml-40">
           <img
-            src="/faces/Group6.jpg"
+            src="https://res.cloudinary.com/dq52smwbk/image/upload/v1764306983/Group6_p09okr.jpg"
             alt="MIF"
             className="rounded-xl shadow-lg w-[90%] max-w-[650px] h-[400px] object-cover"
           />

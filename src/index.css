@@ -16,3 +16,7 @@ html, body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+:root {
+  --color-gold: #D4AF37;
+}

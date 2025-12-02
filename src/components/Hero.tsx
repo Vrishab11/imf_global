@@ -21,7 +21,7 @@ const HeroSection = () => {
     <section
       id="home"
       ref={heroRef}
-      className="bg-[url('/images/mobile_hero.jpg')] md:bg-[url('https://res.cloudinary.com/dq52smwbk/image/upload/v1764306950/night_v7rzn6.jpg')] bg-cover bg-center relative min-h-[85vh] md:min-h-screen flex items-center justify-start md:justify-center overflow-hidden lg:pl-14"
+      className="bg-[url('/images/mobile_hero.webp')] md:bg-[url('/images/night.webp')] bg-cover bg-center relative min-h-[85vh] md:min-h-screen flex items-center justify-start md:justify-center overflow-hidden lg:pl-14"
       style={{
         backgroundBlendMode: 'darken',
         backgroundColor: 'rgba(0, 0, 0, 0.4)'
